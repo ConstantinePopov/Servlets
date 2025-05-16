@@ -12,7 +12,7 @@ public class PostRepository {
     private final AtomicInteger numberOfPosts = new AtomicInteger(0);
 
     public PostRepository() {
-        this.postDatabase = new ConcurrentHashMap<>();
+        postDatabase = new ConcurrentHashMap<>();
     }
 
     public List<Post> all() {
